@@ -1,0 +1,14 @@
+<p>
+  bindings works!
+</p>
+<h2 [hidden]="isDisplay">String Interpolation {{someVar}}</h2>
+<h3> Attribute binding</h3>
+<button [disabled]="isDisabled">Click Me</button>
+<hr/>
+<h3> Event binding</h3>
+<button (dblclick)="doSomething()">Toggle</button>
+<hr/>
+<h3>Two-Way Bindings</h3>
+<!-- [(ngModel)] to create Two-Way Binding
+Form needs to requires Form module, which you need to import from the app.module.ts -->
+<input type="text" [(ngModel)]='someVar'>
